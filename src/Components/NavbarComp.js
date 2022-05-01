@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
+import { Navbar, NavDropdown, Form, FormControl, Button, Nav ,Page404 } from 'react-bootstrap'
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,6 +11,7 @@ import Home from './Home';
 import Contact from './Contact';
 import About from './About'
 
+
 export default class NavbarComp extends Component {
     render() {
         return (
@@ -18,7 +19,7 @@ export default class NavbarComp extends Component {
                 <div>
 
                     <Navbar bg="dark" variant={"dark"} expand="lg">
-                        <Navbar.Brand href="#">Navbar Demo Arjun Codes</Navbar.Brand>
+                        <Navbar.Brand href="#">Save Earth</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
@@ -27,8 +28,9 @@ export default class NavbarComp extends Component {
                                 navbarScroll
                             >
                                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                                <Nav.Link as={Link} to="/about">About</Nav.Link>
-                                <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                                <Nav.Link as={Link} to="/about">Earth Blog</Nav.Link>
+                                <Nav.Link as={Link} to="/contact">Donate</Nav.Link>
+                               
 
                             </Nav>
 
